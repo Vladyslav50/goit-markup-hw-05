@@ -845,7 +845,7 @@ svg {
   border-color: var(--primary-brand-color);
 }
 
-.modal-fild .comment {
+.comment {
   margin-bottom: 16px;
 }
 
@@ -868,11 +868,11 @@ svg {
   /* margin-bottom: 24px; */
 }
 
-.modal-fild .checkbox {
+.modal-fild.checkbox {
   margin-bottom: 24px;
 }
 
-.check-text span {
+.check-icon {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -885,23 +885,24 @@ svg {
   fill: transparent;
 }
 
-.check-text a {
+/* .check-text a */
+.chek-policy {
   color: var(--primary-brand-color);
   text-decoration: underline;
 }
 
 /* перевірка чи чекнутий чекбокс */
-.input-check:checked + .check-text span {
+.input-check:checked + .check-text .check-icon {
   background-color: var(--pressed-state-color);
   border: none;
   fill: var(--light_color);
 }
 
 .modal-btn {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   background-color: var(--primary-brand-color);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
