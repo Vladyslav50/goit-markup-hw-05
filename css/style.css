@@ -793,7 +793,7 @@ svg {
 }
 
 .modal-input:focus + .input-icon {
-  fill: var(--pressed-state-color);
+  fill: var(--primary-brand-color);
 }
 
 .modal-label {
@@ -803,7 +803,7 @@ svg {
   letter-spacing: 0.04em;
   color: var(--subtle-text);
   margin-bottom: 4px;
-  display: inline-block;
+  display: block;
 }
 
 .input-wrap {
@@ -814,7 +814,7 @@ svg {
   fill: var(--modal-overlay-color);
   /* stroke: none; */
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--transicion);
@@ -827,13 +827,26 @@ svg {
   height: 120px;
   background-color: transparent;
   padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 
-  color: var(--dark-color);
+  /* color: var(--dark-color); */
   /* прибрали рамку при заповненні поля */
   outline: transparent;
   /* прибрати ползунок */
   resize: none;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
+  transition: border-color var(--transicion);
+}
+
+.modal-textarea:focus {
+  border-color: var(--primary-brand-color);
+}
+
+.modal-fild .comment {
+  margin-bottom: 16px;
 }
 
 .modal-textarea::placeholder {
@@ -852,6 +865,10 @@ svg {
   color: var(--subtle-text);
   display: flex;
   align-items: center;
+  /* margin-bottom: 24px; */
+}
+
+.modal-fild .checkbox {
   margin-bottom: 24px;
 }
 
@@ -862,7 +879,7 @@ svg {
   border-radius: 2px;
   /* display: block; */
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -890,7 +907,7 @@ svg {
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border: none;
   border-radius: 4px;
-
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
