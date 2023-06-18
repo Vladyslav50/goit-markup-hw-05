@@ -967,30 +967,14 @@ svg {
     fill var(--transicion);
 }
 
-/* теж саме через span ....check-icon */
-
-.check-text span {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  margin-right: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  transition: background-color var(--transicion), border var(--transicion),
-    fill var(--transicion);
-}
-
 /* .check-text a */
 .chek-policy {
   color: var(--primary-brand-color);
   text-decoration: underline;
 }
 
-/* перевірка чи чекнутий чекбокс....check-icon  */
-.input-check:checked + .check-text span {
+/* перевірка чи чекнутий чекбокс  */
+.input-check:checked + .check-text .check-icon {
   background-color: var(--pressed-state-color);
   border: none;
   fill: var(--light_color);
