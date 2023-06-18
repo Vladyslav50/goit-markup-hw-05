@@ -625,6 +625,7 @@ svg {
 }
 
 .soc-link-blok {
+  margin-right: 80px;
 }
 .soc-link-titel {
   color: var(--white-background-color);
