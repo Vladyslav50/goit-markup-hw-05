@@ -633,6 +633,7 @@ svg {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-right: 80px;
 }
 .soc-link-list {
   display: flex;
@@ -688,6 +689,85 @@ svg {
   /* flex-wrap: wrap; */
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-form-label {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-background-color);
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  color: var(--white-background-color);
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  /* прибрали рамку при заповненні поля */
+  outline: transparent;
+  transition: border-color var(--transicion);
+}
+
+.footer-input:focus {
+  border-color: var(--primary-brand-color);
+}
+
+.footer-input::placeholder {
+  /* font-family: "Roboto"; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* font-size: 12px; */
+  /* line-height: 2; */
+  color: var(--white-background-color);
+}
+
+.footer-btn {
+  display: flex;
+  /* padding: 8px 24px; */
+  /* gap: 16px; */
+  justify-content: center;
+  align-items: center;
+
+  min-width: 165px;
+  height: 40px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background-color);
+  border: none;
+  background: var(--primary-brand-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transicion);
+}
+
+.footer-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+
+.icon-telega {
+  margin-left: 16px;
+}
+
+/* Модалка */
 .backdrop {
   position: fixed;
   top: 0;
