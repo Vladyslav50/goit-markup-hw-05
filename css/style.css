@@ -944,7 +944,7 @@ svg {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   /* margin-bottom: 24px; */
 }
@@ -953,6 +953,7 @@ svg {
   margin-bottom: 24px;
 }
 
+/* ??? .check-text span ???  */
 .check-icon {
   width: 16px;
   height: 16px;
